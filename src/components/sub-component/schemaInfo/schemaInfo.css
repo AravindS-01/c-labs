@@ -1,0 +1,8 @@
+.Color-info-label{
+    font-weight: 500;
+}
+.Color-info-group{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}

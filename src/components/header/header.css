@@ -1,0 +1,19 @@
+.Header-cmp {
+    background-color: #42E6EC;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    font-size: calc(5px + 2vmin);
+    color: white;
+    padding: 15px;
+    gap:1.5rem;
+    font-family: serif;
+  }
+  .Header-label{
+    /* font-size:  calc(5px + 2vmin); */
+    /* font-weight: 700; */
+  }
+
+  .none{
+    display: none;
+  }
