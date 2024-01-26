@@ -1,14 +1,19 @@
-.input-element{
-    display: flex;
-    flex-direction: column;
+.input-element {
+  display: flex;
+  flex-direction: column;
 }
 
-.input-label{
-    margin: 1.5rem 0rem;
-    font-size: 18px;
-    font-weight: 500;
+.input-label {
+  margin: 1.5rem 0rem;
+  font-size: 18px;
+  font-weight: 500;
 }
-.input-tag{
-    padding: 1rem;
-     outline:none; 
+.input-tag {
+  padding: 1rem;
+  outline: none;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
 }

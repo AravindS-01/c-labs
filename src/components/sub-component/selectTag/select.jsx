@@ -47,20 +47,22 @@ const Select = ({ options, label, setOptions }) => {
         <CgRemoveR color={"lightblue"} size={"3rem"} className='remove-icon' />
       </section>
       <div className={toggleOptions ? "option-show" : "none"}>
-        {options?.map((schema) => {
-          return (
-            <div className='select-option' key={schema.id}>
-              <input
-                type='checkbox'
-                value={schema.label}
-                id={schema.id}
-                checked={schema.selected}
-                onChange={handleChecked}
-              />
-              <label style={{ cursor: "pointer" }}> {schema.label}</label>
-            </div>
-          );
-        })}
+        {options.reduce((acc, schema) => {
+          !schema.added &&
+            acc.push(
+              <div className='select-option' key={schema.id + "dropdown"}>
+                <input
+                  type='checkbox'
+                  value={schema.label}
+                  id={schema.id}
+                  checked={schema.selected}
+                  onChange={handleChecked}
+                />
+                <label style={{ cursor: "pointer" }}> {schema.label}</label>
+              </div>
+            );
+          return acc;
+        }, [])}
       </div>
     </>
   );

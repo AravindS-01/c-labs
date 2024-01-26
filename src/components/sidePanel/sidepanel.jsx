@@ -3,22 +3,10 @@ import "./sidepanel.css";
 import Input from "../sub-component/input/input";
 import SchemaInfo from "../sub-component/schemaInfo/schemaInfo";
 import Select from "../sub-component/selectTag/select";
-import AllAddedSelect from "../sub-component/allAddedSelect/allAddedSelect";
+import AllAddedSchema from "../sub-component/allAddedSchema/allAddedSchema";
 import { FaPlus } from "react-icons/fa6";
 
-const INITIAL_DATA = [
-  { id: "first_name", label: "First Name", added: false, selected: false },
-  { id: "last_name", label: "Last Name", added: false, selected: false },
-  { id: "gender", label: "Gender", added: false, selected: false },
-  { id: "age", label: "Age", added: false, selected: false },
-  { id: "account_name", label: "Account Name", added: false, selected: false },
-  { id: "city", label: "City", added: false, selected: false },
-  { id: "state", label: "State", added: false, selected: false },
-];
-
-const Sidepanel = ({ open, setOpen, children }) => {
-  const [options, setOptions] = useState(INITIAL_DATA);
-
+const Sidepanel = ({ open, setOpen, children, options, setOptions }) => {
   const handleClick = useCallback(() => {
     setOptions((pre) =>
       pre.map((option) => {
@@ -49,7 +37,7 @@ const Sidepanel = ({ open, setOpen, children }) => {
               size={"24px"}
             />
           </div>
-          <AllAddedSelect options={options} setOptions={setOptions} />
+          <AllAddedSchema options={options} setOptions={setOptions} />
 
           <Select
             options={options}
