@@ -17,7 +17,7 @@ function App() {
   const [options, setOptions] = useState(INITIAL_DATA);
 
   const saveSegment = () => {
-    //const url = "https://webhook.site/#!/94027e53-b7bf-44de-ac88-130473b90663";
+    ///const url = "https://webhook.site/#!/94027e53-b7bf-44de-ac88-130473b90663";
 
     const segment_name = document.getElementById("segment-input").value;
     if (!segment_name) {
