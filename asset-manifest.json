@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/c-labs/static/css/main.5712bf19.css",
+    "main.js": "/c-labs/static/js/main.952c5599.js",
+    "static/js/787.69002d00.chunk.js": "/c-labs/static/js/787.69002d00.chunk.js",
+    "index.html": "/c-labs/index.html",
+    "main.5712bf19.css.map": "/c-labs/static/css/main.5712bf19.css.map",
+    "main.952c5599.js.map": "/c-labs/static/js/main.952c5599.js.map",
+    "787.69002d00.chunk.js.map": "/c-labs/static/js/787.69002d00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5712bf19.css",
+    "static/js/main.952c5599.js"
+  ]
+}
